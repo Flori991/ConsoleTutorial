@@ -102,7 +102,7 @@ namespace BeginnerProject
             return result;
         }
 
-        public int Dividieren()
+        public Result Dividieren()
         {
             while (true)
             {
@@ -128,7 +128,8 @@ namespace BeginnerProject
                 break;
             }
 
-            int result = numberOne / numberTwo;
+            Result result = new Result(numberOne / numberTwo, numberOne % numberTwo);
+                       
             return result;
             
         }

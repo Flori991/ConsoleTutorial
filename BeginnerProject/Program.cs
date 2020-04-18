@@ -42,8 +42,8 @@ namespace BeginnerProject
                         Console.ReadKey();
                         break;
                     case "4":
-                        int resultD = rechner.Dividieren();
-                        Console.WriteLine($"Ihr Ergebnis ist: {resultD}");
+                        Result resultD = rechner.Dividieren();
+                        Console.WriteLine($"Ihr Ergebnis ist: {resultD.result} Rest: {resultD.remain}");
                         Console.ReadKey();
                         break;
                     case "5":
