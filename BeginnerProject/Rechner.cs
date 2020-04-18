@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace BeginnerProject
 {
-    class Program
+    public class Rechner
     {
-        Rechner rechner = new Rechner();
 
-        static void Main(string[] args)
+        public void Multiplizieren()
         {
-                        
+
         }
     }
 }
