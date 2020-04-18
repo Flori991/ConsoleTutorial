@@ -133,5 +133,11 @@ namespace BeginnerProject
             return result;
             
         }
+
+        public Result CalcDiv(int num1, int num2)
+        {
+            Result result = new Result(num1 / num2, num1 % num2);
+            return result;
+        }
     }
 }
