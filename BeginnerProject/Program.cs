@@ -10,6 +10,16 @@ namespace BeginnerProject
     {
         static void Main(string[] args)
         {
+            Program program = new Program();
+
+            program.Anzeige();
+        }
+
+        public void Anzeige()
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Hallo Welt");
+            Console.ReadKey();
         }
     }
 }
