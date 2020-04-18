@@ -22,7 +22,7 @@ namespace BeginnerProject
             while (mainBool)
             {
                 Console.WriteLine("Hallo!");
-                Console.WriteLine("(1) Addieren, (2) Subtrahieren, (3) Beenden");
+                Console.WriteLine("(1) Addieren, (2) Subtrahieren, (3) Muliplizieren, (4) Dividieren, (5) Beenden");
                 string userInput = Console.ReadLine();
                 switch (userInput)
                 {
@@ -37,6 +37,16 @@ namespace BeginnerProject
                         Console.ReadKey();
                         break;
                     case "3":
+                        int resultM = rechner.Multiplizieren();
+                        Console.WriteLine($"Ihr Ergebnis ist: {resultM}");
+                        Console.ReadKey();
+                        break;
+                    case "4":
+                        int resultD = rechner.Dividieren();
+                        Console.WriteLine($"Ihr Ergebnis ist: {resultD}");
+                        Console.ReadKey();
+                        break;
+                    case "5":
                         mainBool = false;
                         break;
                     default:

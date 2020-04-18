@@ -11,11 +11,7 @@ namespace BeginnerProject
         private int numberOne;
         private int numberTwo;
 
-        public void Multiplizieren()
-        {
-            Console.WriteLine("H");
-            Console.ReadKey();
-        }
+       
 
         public int Addieren()
         {
@@ -74,6 +70,67 @@ namespace BeginnerProject
 
             int result = numberOne - numberTwo;
             return result;
+        }
+
+        public int Multiplizieren()
+        {
+            while (true)
+            {
+                Console.WriteLine("Geben sie die erste Zahl ein");
+                string userInput = Console.ReadLine();
+                if (!Int32.TryParse(userInput, out numberOne))
+                {
+                    Console.WriteLine("Gebe eine Zahl ein");
+                    continue;
+                }
+                break;
+            }
+
+            while (true)
+            {
+                Console.WriteLine("Geben sie die zweite Zahl ein");
+                string userInput = Console.ReadLine();
+                if (!Int32.TryParse(userInput, out numberTwo))
+                {
+                    Console.WriteLine("Gebe eine Zahl ein");
+                    continue;
+                }
+                break;
+            }
+
+            int result = numberOne * numberTwo;
+            return result;
+        }
+
+        public int Dividieren()
+        {
+            while (true)
+            {
+                Console.WriteLine("Geben sie die erste Zahl ein");
+                string userInput = Console.ReadLine();
+                if (!Int32.TryParse(userInput, out numberOne))
+                {
+                    Console.WriteLine("Gebe eine Zahl ein");
+                    continue;
+                }
+                break;
+            }
+
+            while (true)
+            {
+                Console.WriteLine("Geben sie die zweite Zahl ein");
+                string userInput = Console.ReadLine();
+                if (!Int32.TryParse(userInput, out numberTwo))
+                {
+                    Console.WriteLine("Gebe eine Zahl ein");
+                    continue;
+                }
+                break;
+            }
+
+            int result = numberOne / numberTwo;
+            return result;
+            
         }
     }
 }
