@@ -7,6 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Orientation="Vertical" Grid.Column="0">
+            <TextBox x:Name="numberField1" Text="Erste Zahl" Margin="5,5"/>
+            <TextBox x:Name="numberField2" Text="Zweite Zahl" Margin="5,5"/>
+            <TextBox x:Name="numberField3" Text="Ergebnis" Margin="5,5"/>
+            <TextBox x:Name="numberField4" Text="Rest" Margin="5,5"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Column="1" HorizontalAlignment="Left">
+            <Button x:Name="divButton" Content="Dividieren" Margin="5,5" Width="70" Click="DivButtonClick"/>
+        </StackPanel>
     </Grid>
 </Window>
