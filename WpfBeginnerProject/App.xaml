@@ -4,6 +4,16 @@
              xmlns:local="clr-namespace:WpfBeginnerProject"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style x:Key="StreetButton" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="VerticalContentAlignment" Value="Top"/>
+        </Style>
+        <Style x:Key="StreetInfoText" TargetType="TextBox">
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
     </Application.Resources>
 </Application>

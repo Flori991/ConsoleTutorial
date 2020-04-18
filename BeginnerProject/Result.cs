@@ -11,7 +11,7 @@ namespace BeginnerProject
         public int result { get; set; }
         public int remain { get; set; }
 
-        public Result(int result, int remain = 0)
+        public Result(int result = 0, int remain = 0)
         {
             this.result = result;
             this.remain = remain;

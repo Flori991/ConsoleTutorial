@@ -5,22 +5,55 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfBeginnerProject"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" WindowState="Maximized" Height="1000" Width="1000">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1*"/>
-            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
-        <StackPanel Orientation="Vertical" Grid.Column="0">
-            <TextBox x:Name="numberField1" Text="Erste Zahl" Margin="5,5"/>
-            <TextBox x:Name="numberField2" Text="Zweite Zahl" Margin="5,5"/>
-            <TextBox x:Name="numberField3" Text="Ergebnis" Margin="5,5"/>
-            <TextBox x:Name="numberField4" Text="Rest" Margin="5,5"/>
-        </StackPanel>
+        <Grid Grid.Row="0" Grid.Column="1" Width="80">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="22"/>
+                <RowDefinition Height="98"/>
+            </Grid.RowDefinitions>
+            <Label Background="Brown" Height="22" BorderBrush="Black" BorderThickness="2 2 2 0"/>
+            <Button Grid.Row="1" Height="98" Style="{StaticResource StreetButton}"/>
+            <TextBox Grid.Row="1" Text="Badstraße" VerticalAlignment="Top" HorizontalContentAlignment="Center" Style="{StaticResource StreetInfoText}"/>
+            <TextBox Grid.Row="1" Text="200€" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" Style="{StaticResource StreetInfoText}"/>
+            <StackPanel x:Name="BadstraßePanel" Orientation="Horizontal" Grid.Row="0" HorizontalAlignment="Center">
+                <Label Height="15" Width="15" Background="LightGreen" Margin="2"/>
+                <Label Height="15" Width="15" Background="LightGreen" Margin="2"/>
+                <Label Height="15" Width="15" Background="LightGreen" Margin="2"/>
+                <Label Height="15" Width="15" Background="LightGreen" Margin="2"/>
+            </StackPanel>
+        </Grid>
 
-        <StackPanel Orientation="Vertical" Grid.Column="1" HorizontalAlignment="Left">
-            <Button x:Name="divButton" Content="Dividieren" Margin="5,5" Width="70" Click="DivButtonClick"/>
-        </StackPanel>
+        <Button Content="Test" Grid.Column="11" Width="50" Height="40" Click="TestClick"/>
+
     </Grid>
 </Window>

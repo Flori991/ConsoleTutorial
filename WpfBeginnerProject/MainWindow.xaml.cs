@@ -28,14 +28,13 @@ namespace WpfBeginnerProject
 
         private void DivButtonClick(object sender, RoutedEventArgs e)
         {
-            string input1 = numberField1.Text;
-            string input2 = numberField2.Text;
-            Int32.TryParse(input1, out int num1);
-            Int32.TryParse(input2, out int num2);
-            Rechner rechner = new Rechner();
-            Result result = rechner.CalcDiv(num1, num2);
-            numberField3.Text = result.result.ToString();
-            numberField4.Text = result.remain.ToString();
+        }
+
+        private void TestClick(object sender, RoutedEventArgs e)
+        {
+            var test = BadstraßePanel.Children;
+            Label label = (Label)test[0];
+            label.Background = Brushes.Red;
         }
     }
 }
