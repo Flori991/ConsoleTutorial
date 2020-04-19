@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace WpfBeginnerProject.Models
 {
-    class Street
+    public class Street
     {
-        public string name { get; set; }
-        public int preis { get; set; }
-        public int miete { get; set; }
-        public int einkommen { get; set; }
-        public int feldart { get; set; }
+        public string Name { get; set; }
+        public int Preis { get; set; }
+        public int Miete { get; set; }
+        public int Einkommen { get; set; }
+        public string FeldArt { get; set; }
     }
 }

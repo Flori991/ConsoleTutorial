@@ -24,6 +24,8 @@ namespace WpfBeginnerProject
         public MainWindow()
         {
             InitializeComponent();
+            Gamedata game = new Gamedata();
+            game.ReadCsvData();
         }
 
         private void DivButtonClick(object sender, RoutedEventArgs e)
